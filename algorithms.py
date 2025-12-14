@@ -1,4 +1,6 @@
 from collections import deque
+from typing import Any, Generator
+
 from maze import Maze, WALL, START, GOAL, VISITED, FRONTIER, PATH, EMPTY
 import random
 """
@@ -9,7 +11,7 @@ DISCLAIMER:
 
 - To allow each step to generate individually rather than all at once, yield is used.
 """
-def bfs_algorithm(maze: Maze) -> None:
+def bfs_algorithm(maze: Maze) -> Generator[None, Any, None]:
     """
     Breadth-first search, generates solving animation.
     """
@@ -50,7 +52,7 @@ def bfs_algorithm(maze: Maze) -> None:
             yield
 
 
-def dfs_algorithm(maze: Maze) -> None:
+def dfs_algorithm(maze: Maze) -> Generator[None, Any, None]:
     """
     Depth-first search, generates solving animation
     """
@@ -74,7 +76,7 @@ def dfs_algorithm(maze: Maze) -> None:
             if (nr, nc) != maze.start and (nr, nc) != maze.goal:
                 maze.grid[nr][nc] = FRONTIER
 
-    # Reconstructs path if reached
+    #Reconstructs path if reached
     if maze.goal in breadcrumbs:
         node=maze.goal
         while node is not None:

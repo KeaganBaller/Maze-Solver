@@ -51,7 +51,7 @@ class Maze:
         row=int(y//cell_height)
         return row, col
 
-    def set_wall(self, row: int, col: int, cell_mode:int=None, is_dragging:bool=False) -> int:
+    def set_wall(self, row: int, col: int, cell_mode:int=None, is_dragging:bool=False) -> int|None:
         """
         Sets the wall of a point determined by row and col parameter
         :param row: Used for setting wall
