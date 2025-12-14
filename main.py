@@ -96,6 +96,7 @@ def main() -> None:
 
     #Event loop for pygame
     while is_running:
+        #If you want faster results, you could increase the value inside clock.tick
         time_delta = clock.tick(60) / 1000.0
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
