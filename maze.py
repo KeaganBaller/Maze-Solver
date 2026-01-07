@@ -9,7 +9,7 @@ VISITED=4
 FRONTIER=5
 PATH=6
 
-#Cell colors, index corresponds with cell value
+#Cell colors, index corresponds with cell valu
 COLORS=("#303030", "#1c1c1c", "#26ff00", "#ff1100", "#4646c8", "#7878ff", "#fafa34")
 
 class Maze:
