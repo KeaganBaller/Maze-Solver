@@ -3,14 +3,7 @@ from typing import Any, Generator
 
 from maze import Maze, WALL, START, GOAL, VISITED, FRONTIER, PATH, EMPTY
 import random
-"""
-DISCLAIMER:
-- Used ChatGPT and tutorials for learning and figuring out how to use BFS and DFS algorithms.
-- Only AI-Generated function is the maze generator, a user tool that was created as an afterthought.
-- Everything else was coded based on brief, undetailed steps given by ChatGPT and tutorials.
 
-- To allow each step to generate individually rather than all at once, yield is used.
-"""
 def bfs_algorithm(maze: Maze) -> Generator[None, Any, None]:
     """
     Breadth-first search, generates solving animation.
