@@ -8,7 +8,7 @@ GOAL=3
 VISITED=4
 FRONTIER=5
 PATH=6
-
+#TODO Fix docstrings
 #Cell colors, index corresponds with cell valu
 COLORS=("#303030", "#1c1c1c", "#26ff00", "#ff1100", "#4646c8", "#7878ff", "#fafa34")
 
