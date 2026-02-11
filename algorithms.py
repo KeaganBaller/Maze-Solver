@@ -4,6 +4,8 @@ from typing import Any, Generator
 from maze import Maze, WALL, START, GOAL, VISITED, FRONTIER, PATH, EMPTY
 import random
 
+#Might add A* and Dijkstra in the future
+
 def bfs_algorithm(maze: Maze) -> Generator[None, Any, None]:
     """
     Breadth-first search, generates solving animation.
